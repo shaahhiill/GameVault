@@ -1,0 +1,126 @@
+.home-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    top: 0%;
+    margin: 0% auto;
+    position: relative;
+    font-size: 250%;
+    font-family: 'Times New Roman';
+    margin-bottom: 20px;
+}
+
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.introduction1 {
+    justify-content: center;
+    text-align: left center;
+    font-size: 20px;
+    color: white;
+    margin: 40px; margin-bottom: 0; width: 80%;
+
+}
+/*.featured-games { width:100%; padding:25px 10%; }*/
+
+.featured-games ul {
+    gap: 100px;
+    padding: 10px 0 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.featured-games li {
+   display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    border-radius: 4px;
+    height: auto;
+    padding: 0 0 15px 0 ;  width: 210px; 
+}
+
+.featured-games img {
+    width: 210px; 
+    height: 285px; 
+    margin-bottom: 1px; /* Adds spacing between image and text */
+}
+
+.featured-games p {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    color: #fff; margin-top: 10px;
+}
+
+
+.best-selling ul {
+    gap: 100px;
+    padding: 20px 0 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.best-selling li {
+     display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+ 
+    border-radius: 4px;
+    height: auto;
+    padding: 0 0 15px 0 ;  width: 210px; 
+}
+
+.best-selling img {
+    width: 210px; 
+    height: 285px; 
+    margin-bottom: 1px; /* Adds spacing between image and text */
+}
+
+.best-selling p {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    color: white;  margin-top: 10px;
+}
+
+
+.featured-games > p,
+.best-selling > p,
+.testimonials > p{
+    margin-top: auto; 
+    font-size: 28px;
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10%;
+    border: 2px solid ;
+    width: 30%;
+    margin: 80px auto; 
+}
+
+
+.testimonials{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 5px;
+    margin: 40px;
+}
+
+.testimonials li{
+margin-bottom: 30px;
+}
+
+

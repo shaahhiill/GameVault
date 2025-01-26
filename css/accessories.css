@@ -1,0 +1,48 @@
+/* 5. Accesssories Page */
+.Accessories {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 170px;
+    align-items: center;
+    width: 100%;
+    margin-top: 4%;
+    row-gap: 80px;
+}
+
+.Accessories img {
+    width: 200px; 
+    height: 285px; 
+}
+
+
+.Accessories figure {
+    text-align: center; 
+    position: relative;
+}
+
+
+.Accessories figcaption {
+    margin-top: 10%; 
+    font-size: 16px;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+
+.price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: orange;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+figure:hover .price {
+    opacity: 1; 
+}

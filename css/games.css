@@ -1,0 +1,65 @@
+.genre {
+    margin-top: 5%; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10%;
+    border: 2px solid ;
+    max-width: 60%;
+    margin: auto;
+}
+
+
+.genre a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    padding: 22px;
+}
+
+
+.genre-games {
+    gap: 20px;
+    padding: 50px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+}
+
+
+.genre-games img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.genre-games figure {
+  text-align: center; 
+    position: relative;
+}
+
+
+.genre-games figcaption {
+   
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+.description {
+    position: absolute;
+    color: orange;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(-45%, -700%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+figure:hover .description {
+    opacity: 1; 
+}

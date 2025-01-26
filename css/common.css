@@ -1,0 +1,187 @@
+body {
+    background-color: black;
+    margin: 0%;
+}
+
+
+ul, ol {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+    
+.store-name {
+    display: flex;
+    background-color: black
+}
+
+.logo1 {
+    width: 270px;
+    height: 200px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon a {
+    font-size: 20px; 
+    color: white;
+    text-decoration: none;
+    margin-left: 0; 
+}
+
+.search-icon form input {
+    width: 200px;
+    height: 49px;
+    border: 0;
+    text-indent: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.search-icon form button {
+    height: 50px;
+    border: 0;
+    padding: 0 15px;
+    background: orange;
+    font-size: 14px;
+    border-radius: 0 10px 10px 0;
+}
+
+@media (min-width:768px) {
+    .search-icon a {
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+        margin-left: 850%;
+    }
+}
+
+
+.header {
+    margin-top: 30px; 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    gap: 2%;
+    border: 2px solid ;
+    width: 90%;
+    margin: 20px auto; 
+}
+
+
+.header a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    padding: 22px; transform: scale(1.2);
+}
+
+.header a:hover{
+      color: orange;
+}
+
+.contact-us {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+    padding: 15px; 
+    background-color: #1a1919; 
+    color: orange;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .contact-us {
+        margin-left: 50px;
+        width: 100%;
+    }
+}
+
+.contact-us, .links {
+    width: 100%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: black;
+}
+
+
+
+
+.links a{
+    margin: 0 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.links a:hover {
+    transform: scale(1.2);
+    color: orange;
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    width: 40px;
+    height: 40px;
+}
+
+
+.icon1 {
+    width: 58px;
+    height: 58px;
+}
+
+.container { display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+    margin: 0 auto;
+}
+
+.upcoming-games-page .contact-us, 
+.upcoming-games-page .links {
+    width: 90%; 
+    margin: 20px auto; 
+    padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .search-icon form input {
+        width: 150px;
+    }
+
+    .contact-us {
+        margin-left: 50px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .search-icon a {
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+        margin-left: 850%;
+    }
+    .container{
+        max-width: fit-content;
+    }
+}

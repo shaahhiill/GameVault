@@ -1,0 +1,88 @@
+.xbox p {
+    margin-top: auto; 
+    font-size: 28px;
+    background-color: black;
+    color: #0E7A;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10%;
+    border: 2px solid ;
+    width: 20%;
+    margin: 80px auto; 
+    font-family: 'Times New Roman';
+}
+
+.playstation p {
+    margin-top: auto; 
+    font-size: 28px;
+    background-color: black;
+    color: #006FCD;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10%;
+    border: 2px solid ;
+    width: 20%;
+    margin: 80px auto; 
+    font-family: 'Times New Roman';
+}
+
+
+.Nintendo p {
+    margin-top: auto; 
+    font-size: 28px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10%;
+    border: 2px solid ;
+    width: 20%;
+    margin: 80px auto; 
+    font-family: 'Times New Roman';
+}
+
+
+.consoles {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 170px;
+    align-items: center;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.consoles img {
+    width: 450px; 
+    height: 550px;
+}
+
+
+.consoles figure {
+    text-align: center; 
+    position: relative;
+}
+
+
+.consoles figcaption {
+    margin-top: 10%; 
+    font-size: 18px;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+
+.Price {
+    position: absolute;
+    color: orange;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(-45%, -1600%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+figure:hover .Price {
+    opacity: 1; 
+}
