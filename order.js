@@ -40,17 +40,47 @@ function payNow() {
   const card = document.getElementById("card").value.trim();
   const cvv = document.getElementById("cvv").value.trim();
 
-  // Make sure all fields are filled
+  // Validation patterns:
+  const nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces allowed
+  const emailValid = email.includes('@') && email.endsWith('.com'); // Email must contain '@' and end with '.com'
+  const cardRegex = /^\d{16}$/; // Card number must be exactly 16 digits
+  const cvvRegex = /^\d{3}$/; // CVV must be exactly 3 digits
+
+  // Check if any field is empty
   if (!name || !email || !address || !card || !cvv) {
-    alert("Please fill in all fields."); // You can change this alert message
+    alert("Please fill in all fields.");
     return;
   }
 
-  // Set a delivery date 3 days from now (you can change the number of days here)
+  // Check for valid name (no numbers or special characters)
+  if (!nameRegex.test(name)) {
+    alert("Name must only contain letters and spaces (no numbers or special characters).");
+    return;
+  }
+
+  // Check for valid email format
+  if (!emailValid) {
+    alert("Email must include '@' and end with '.com'.");
+    return;
+  }
+
+  // Check for valid card number (16 digits only)
+  if (!cardRegex.test(card)) {
+    alert("Card number must be exactly 16 digits.");
+    return;
+  }
+
+  // Check for valid CVV (3 digits only)
+  if (!cvvRegex.test(cvv)) {
+    alert("CVV must be exactly 3 digits.");
+    return;
+  }
+
+  // Set a delivery date 3 days from today
   const deliveryDate = new Date();
   deliveryDate.setDate(deliveryDate.getDate() + 3);
 
-  // Create a thank you message to show on the screen
+  // Display thank you message and delivery details
   const message = `
     <h3>Thank you for your purchase, ${name}!</h3>
     <p>Your order will be delivered to:</p>
@@ -58,10 +88,10 @@ function payNow() {
     <p><strong>Expected Delivery Date:</strong> ${deliveryDate.toDateString()}</p>
   `;
   document.getElementById("thankYouMessage").innerHTML = message;
-  document.getElementById("thankYouMessage").style.display = "block"; // Show message
-
-  document.getElementById("orderForm").style.display = "none"; // Hide the form after payment
+  document.getElementById("thankYouMessage").style.display = "block"; // Show thank you message
+  document.getElementById("orderForm").style.display = "none"; // Hide form after payment
 }
+
 
 // Save the current order as a "favourite" to localStorage
 function saveFavourites() {
