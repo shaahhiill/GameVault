@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Saves current cart to local storage and goes to the order page
     window.buyNow = function () {
         localStorage.setItem("currentOrder", JSON.stringify(cart)); // Save cart
-        window.location.href = "order.html"; // Go to order page
+        window.location.href = "Order.html"; // Go to order page
     };
 
     // Save Favourites Button
