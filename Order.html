@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GameVault</title>
+    <link rel="stylesheet" href="css\order.css">
+    <script src="order.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon"    href="images/favicon-32x32.png">
+</head>
+<body>
+
+    <h1>Order Summary</h1>
+
+    <table id="orderTable">
+        <thead>
+            <tr>
+                <th>Accessory</th>
+                <th>Quantity</th>
+                <th>Price (LKR)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h2>Enter Your Details</h2>
+    <form id="orderForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <textarea id="address" placeholder="Delivery Address" required></textarea>
+        <input type="text" id="NameCard" placeholder="Name On Card" required>
+        <input type="text" id="card" placeholder="Card Number" required>
+        <input type="text" id="cvv" placeholder="CVV" required>
+    </form>
+
+    <div class="buttons">
+    <button onclick="payNow()">Pay</button>
+    </div>
+
+    <div id="thankYouMessage"></div>
+
+</body>
+</html>

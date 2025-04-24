@@ -4,10 +4,10 @@
         <title>
             GameVault
         </title>
-        <link rel="stylesheet"   href="css/accessories.css">    
-        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet"   href="css\accessories.css">    
+        <link rel="stylesheet" href="css\common.css">
         <link rel="icon"    href="images/favicon-32x32.png">
-    
+        <script src="Accessories.js" defer></script>   
 </head>
 <body>
 
@@ -36,67 +36,326 @@
     </div>
 
     <div class="Accessories">
-        <figure>
-            <img src="images/ps5 controller.jpg" alt="ps controller">
-            <figcaption>Sony Dual Sense Wireless Controller</figcaption>
-            <span class="price">Price: 30,500 LKR </span>
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/AMD Ryzen 9 7950X.jpg" alt="Ryzen 9 7950X">
+            </div>
+            <figcaption>AMD Ryzen 9 7950X</figcaption>
+            <span class="price">Price: 115,000 LKR</span>
+            <button class="add-to-cart" data-name="AMD Ryzen 9 7950X" data-price="115000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/xbox controoler.jpg" alt="xbox controller">
-            <figcaption>Xbox Wireless Controller</figcaption>
-            <span class="price">Price: 24,900 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/intel core i9.jpg" alt="Intel i9 13900K">
+            </div>
+            <figcaption>Intel Core i9-13900K</figcaption>
+            <span class="price">Price: 125,000 LKR</span>
+            <button class="add-to-cart" data-name="Intel Core i9-13900K" data-price="125000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/xbox-wireless-headset.jpeg" alt="xbox headset">
-            <figcaption>Xbox Wireless Headset</figcaption>
-            <span class="price">Price: 38,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/AMD Ryzen 7 7800X3D.jpg" alt="Ryzen 7 7800X3D">
+            </div>
+            <figcaption>AMD Ryzen 7 7800X3D</figcaption>
+            <span class="price">Price: 98,000 LKR</span>
+            <button class="add-to-cart" data-name="AMD Ryzen 7 7800X3D" data-price="98000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/playstation headset.png" alt="ps headset">
-            <figcaption>Playstation 5 Pulse 3D Wireless Headset</figcaption>
-            <span class="price">Price: 32,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Intel Core i7-13700K.jpg" alt="Intel i7 13700K">
+            </div>
+            <figcaption>Intel Core i7-13700K</figcaption>
+            <span class="price">Price: 89,000 LKR</span>
+            <button class="add-to-cart" data-name="Intel Core i7-13700K" data-price="89000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/xbox battery.png" alt="xbox battery">
-            <figcaption>Xbox Rechargeble Battery</figcaption>
-            <span class="price">Price: 15,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/AMD Ryzen 5 7600.jpg" alt="Ryzen 5 7600">
+            </div>
+            <figcaption>AMD Ryzen 5 7600</figcaption>
+            <span class="price">Price: 62,000 LKR</span>
+            <button class="add-to-cart" data-name="AMD Ryzen 5 7600" data-price="62000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/xbox adaptive controller.jpg" alt="xbox adaptive controller">
-            <figcaption>Xbox Adaptive Controller</figcaption>
-            <span class="price">Price: 15,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Intel Core i5-13400F.jpg" alt="Intel i5 13400F">
+            </div>
+            <figcaption>Intel Core i5-13400F</figcaption>
+            <span class="price">Price: 52,000 LKR</span>
+            <button class="add-to-cart" data-name="Intel Core i5-13400F" data-price="52000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/wd black.jpg" alt="wd black">
-            <figcaption>WD Black SN770  256/512/1000 GB</figcaption>
-            <span class="price">Price: 25,500 LKR Onwards</span>
+
+        
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/NVIDIA GeForce RTX 4090.jpg" alt="RTX 4090">
+            </div>
+            <figcaption>NVIDIA GeForce RTX 4090</figcaption>
+            <span class="price">Price: 595,000 LKR</span>
+            <button class="add-to-cart" data-name="NVIDIA GeForce RTX 4090" data-price="595000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/xbox controller red.jpeg" alt="xbox controller">
-            <figcaption>Xbox Wireless Controller Pulse Red</figcaption>
-            <span class="price">Price: 26,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Nvidia Geforce RTX 4080.jpg" alt="RTX 4080">
+            </div>
+            <figcaption>NVIDIA GeForce RTX 4080</figcaption>
+            <span class="price">Price: 460,000 LKR</span>
+            <button class="add-to-cart" data-name="NVIDIA GeForce RTX 4080" data-price="460000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/playstation access contoller.jpeg" alt="ps controller">
-            <figcaption>Playstation Access Controller</figcaption>
-            <span class="price">Price: 12,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/NVIDIA GeForce RTX 4070 Super.jpg" alt="RTX 4070">
+            </div>
+            <figcaption>NVIDIA GeForce RTX 4070 Super</figcaption>
+            <span class="price">Price: 320,000 LKR</span>
+            <button class="add-to-cart" data-name="NVIDIA GeForce RTX 4070 Super" data-price="320000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/playstation earbuds.png" alt="ps earbuds">
-            <figcaption>Playstation Pulse Explore Wireless Earbuds</figcaption>
-            <span class="price">Price: 64,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/AMD Radeon RX 7900 XT.jpg" alt="RX 7900 XT">
+            </div>
+            <figcaption>AMD Radeon RX 7900 XT</figcaption>
+            <span class="price">Price: 280,000 LKR</span>
+            <button class="add-to-cart" data-name="AMD Radeon RX 7900 XT" data-price="280000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/playstation 5 hdmi cable.jpg" alt="playsation hdmi">
-            <figcaption>Playstation 5 HDMI Cable</figcaption>
-            <span class="price">Price: 12,500 LKR </span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Intel Arc A770 16GB.jpg" alt="Intel Arc A770">
+            </div>
+            <figcaption>Intel Arc A770 16GB</figcaption>
+            <span class="price">Price: 165,000 LKR</span>
+            <button class="add-to-cart" data-name="Intel Arc A770 16GB" data-price="165000">Add to Cart</button>
         </figure>
-        <figure>
-            <img src="images/seagate.png" alt="seagate">
-            <figcaption>Seagate External Storage  1/2/5 TB</figcaption>
-            <span class="price">Price: 18,500 LKR Onwards</span>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/NVIDIA GeForce RTX 4060.jpg" alt="RTX 4060">
+            </div>
+            <figcaption>NVIDIA GeForce RTX 4060 TI</figcaption>
+            <span class="price">Price: 195,000 LKR</span>
+            <button class="add-to-cart" data-name="NVIDIA GeForce RTX 4060 TI" data-price="195000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/ASUS ROG Crosshair X670E Hero.jpg" alt="ASUS ROG Crosshair X670E Hero">
+            </div>
+            <figcaption>ASUS ROG Crosshair X670E Hero</figcaption>
+            <span class="price">Price: 185,000 LKR</span>
+            <button class="add-to-cart" data-name="ASUS ROG Crosshair X670E Hero" data-price="185000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/MSI MAG Z790 TOMAHAWK.jpg" alt="MSI MAG Z790 TOMAHAWK">
+            </div>
+            <figcaption>MSI MAG Z790 TOMAHAWK WiFi</figcaption>
+            <span class="price">Price: 130,000 LKR</span>
+            <button class="add-to-cart" data-name="MSI MAG Z790 TOMAHAWK WiFi" data-price="130000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Gigabyte B650 AORUS Elite.jpg" alt="Gigabyte B650 AORUS Elite">
+            </div>
+            <figcaption>Gigabyte B650 AORUS Elite AX</figcaption>
+            <span class="price">Price: 89,000 LKR</span>
+            <button class="add-to-cart" data-name="Gigabyte B650 AORUS Elite AX" data-price="89000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/ASRock B760 Pro.jpg" alt="ASRock B760 Pro">
+            </div>
+            <figcaption>ASRock B760 Pro RS DDR5</figcaption>
+            <span class="price">Price: 74,000 LKR</span>
+            <button class="add-to-cart" data-name="ASRock B760 Pro RS DDR5" data-price="74000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/ASUS TUF Gaming B550-PLUS.jpg" alt="ASUS B550-PLUS">
+            </div>
+            <figcaption>ASUS TUF Gaming B550-PLUS</figcaption>
+            <span class="price">Price: 59,000 LKR</span>
+            <button class="add-to-cart" data-name="ASUS TUF Gaming B550-PLUS" data-price="59000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/MSI A520M-A PRO.jpg" alt="MSI A520M-A PRO">
+            </div>
+            <figcaption>MSI A520M-A PRO</figcaption>
+            <span class="price">Price: 32,000 LKR</span>
+            <button class="add-to-cart" data-name="MSI A520M-A PRO" data-price="32000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Corsair Vengeance 32GB (2x16GB) DDR5 6000MHz.jpg" alt="Corsair Vengeance DDR5">
+            </div>
+            <figcaption>Corsair Vengeance 32GB (2x16GB) DDR5 6000MHz</figcaption>
+            <span class="price">Price: 64,000 LKR</span>
+            <button class="add-to-cart" data-name="Corsair Vengeance 32GB DDR5" data-price="64000">Add to Cart</button>
+        </figure>
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/G.Skill Trident Z5.jpg" alt="G.Skill Trident Z5">
+            </div>
+            <figcaption>G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5 6400MHz</figcaption>
+            <span class="price">Price: 78,000 LKR</span>
+            <button class="add-to-cart" data-name="G.Skill Trident Z5 RGB 32GB" data-price="78000">Add to Cart</button>
+        </figure>
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Kingston Fury Beast.jpg" alt="Kingston Fury Beast">
+            </div>
+            <figcaption>Kingston Fury Beast 16GB DDR4 3200MHz</figcaption>
+            <span class="price">Price: 19,500 LKR</span>
+            <button class="add-to-cart" data-name="Kingston Fury Beast 16GB DDR4" data-price="19500">Add to Cart</button>
+        </figure>
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/teamGroup T-Force Delta.jpg" alt="TeamGroup T-Force Delta">
+            </div>
+            <figcaption>TeamGroup T-Force Delta RGB 16GB DDR4 3600MHz</figcaption>
+            <span class="price">Price: 22,000 LKR</span>
+            <button class="add-to-cart" data-name="TeamGroup T-Force Delta RGB 16GB" data-price="22000">Add to Cart</button>
+        </figure>
+
+        
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Samsung-990-Pro-1.jpg" alt="Samsung 990 Pro 1TB">
+            </div>
+            <figcaption>Samsung 990 Pro 1TB NVMe SSD</figcaption>
+            <span class="price">Price: 52,000 LKR</span>
+            <button class="add-to-cart" data-name="Samsung 990 Pro 1TB NVMe SSD" data-price="52000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Crucial P5 Plus 1TB.jpg" alt="Crucial P5 Plus 1TB">
+            </div>
+            <figcaption>Crucial P5 Plus 1TB Gen4 NVMe</figcaption>
+            <span class="price">Price: 39,000 LKR</span>
+            <button class="add-to-cart" data-name="Crucial P5 Plus 1TB Gen4 NVMe" data-price="39000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/WESTERN-DIGITAL-1TB.jpg" alt="WD Blue 1TB HDD">
+            </div>
+            <figcaption>Western Digital Blue 1TB 7200 RPM HDD</figcaption>
+            <span class="price">Price: 13,000 LKR</span>
+            <button class="add-to-cart" data-name="Western Digital Blue 1TB HDD" data-price="13000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Seagate Barracuda 2TB HDD.jpg" alt="Seagate Barracuda 2TB HDD">
+            </div>
+            <figcaption>Seagate Barracuda 2TB 7200 RPM HDD</figcaption>
+            <span class="price">Price: 19,000 LKR</span>
+            <button class="add-to-cart" data-name="Seagate Barracuda 2TB HDD" data-price="19000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/sabrent.jpg" alt="Sabrent Rocket 4 Plus 2TB">
+            </div>
+            <figcaption>Sabrent Rocket 4 Plus 2TB Gen4 NVMe</figcaption>
+            <span class="price">Price: 75,000 LKR</span>
+            <button class="add-to-cart" data-name="Sabrent Rocket 4 Plus 2TB" data-price="75000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/ADATA XPG GAMMIX S70 Blade.jpg" alt="ADATA XPG GAMMIX S70 Blade">
+            </div>
+            <figcaption>ADATA XPG GAMMIX S70 Blade 1TB</figcaption>
+            <span class="price">Price: 42,000 LKR</span>
+            <button class="add-to-cart" data-name="ADATA XPG GAMMIX S70 Blade 1TB" data-price="42000">Add to Cart</button>
+        </figure>
+
+
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Kingston NV2 1TB Gen4 NVMe SSD.jpg" alt="Kingston NV2 1TB NVMe SSD">
+            </div>
+            <figcaption>Kingston NV2 1TB Gen4 NVMe SSD</figcaption>
+            <span class="price">Price: 36,000 LKR</span>
+            <button class="add-to-cart" data-name="Kingston NV2 1TB Gen4 NVMe SSD" data-price="36000">Add to Cart</button>
+        </figure>
+        
+        
+        <figure class="product-card">
+            <div class="image-container">
+                <img src="images/Toshiba P300 2TB 7200 RPM HDD.jpg" alt="Toshiba P300 2TB HDD">
+            </div>
+            <figcaption>Toshiba P300 2TB 7200 RPM HDD</figcaption>
+            <span class="price">Price: 17,500 LKR</span>
+            <button class="add-to-cart" data-name="Toshiba P300 2TB HDD" data-price="17500">Add to Cart</button>
         </figure>
     </div>
+      
+        <div class="cart-section">
+          <h2>Cart Summary</h2>
+          <table id="cartTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <h3>Total: <span id="totalPrice">0</span> LKR</h3>
+      
+          <div class="buttons">
+            <button onclick="buyNow()">Buy Now</button>
+            <button onclick="saveFavourites()">Add to Favourites</button>
+            <button onclick="applyFavourites()">Apply Favourites</button>
+            <button onclick="clearFavourites()">Clear Favourites</button>
+          </div>
+        </div>
+    
+      
 
     <div class="contact-us">
         <h1>Contact Us</h1>

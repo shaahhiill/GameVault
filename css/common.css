@@ -25,10 +25,28 @@ ul, ol {
     height: 200px;
 }
 
+
+.cart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-left: 40%;
+}
+
+.cart-icon form button {
+    height: 50px;
+    border: 0;
+    padding: 0 15px;
+    background: orange;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
 .search-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10%;
 }
 
 .search-icon a {
