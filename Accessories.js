@@ -101,11 +101,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Buy Now Button
-    // Saves current cart to local storage and goes to the order page
     window.buyNow = function () {
+            // Check if the cart is empty
+        if (Object.keys(cart).length === 0) {
+            alert("Your cart is empty! Please add some items before proceeding.");
+            return;// Stop the function here — don't go to the order page
+        }
         localStorage.setItem("currentOrder", JSON.stringify(cart)); // Save cart
         window.location.href = "./Order.html"; // Go to order page
     };
+    
 
     // Save Favourites Button
     // Stores current cart as a "favourites" cart in local storage
